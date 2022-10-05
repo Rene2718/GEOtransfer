@@ -1,0 +1,22 @@
+
+#make a directory including metadata template, raw data, processed data.
+#https://www.ncbi.nlm.nih.gov/geo/info/submissionftp.html
+#connect ftp ncbi
+ftp ftp-private.ncbi.nlm.nih.gov
+
+#login username/password
+geoftp
+rebUzyi1
+
+#naivigate to your space
+cd uploads/rene271828@gmail.com_kP6jKWSQ
+mkdir geo_new_submisson
+cd geo_new_submisson
+cd geo_citeseq_pc
+#navigate to your local directory with geo files
+lcd local_path_to_your_files
+#for example : 
+lcd Z:\10X\GEO_CITESEQ_PC
+#transfer single or put all 
+put file_name
+mput *
